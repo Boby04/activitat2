@@ -131,13 +131,15 @@ Hem de deixar un fitxer com el següent, però canviant el ServerName i el Serve
 
 ![](OWN28.png)
 
+
+
 Habilitem owncloud i el mòdul rewrite:
 
 ![](OWN29.png)
 
 Reiniciem Apache:
 
-- sudo service Apache2 restart
+`sudo service Apache2 restart`
 
 
 **A partir d'aquest moment podem accedir a owncloud des del navegador per això hem d'introduir la nostra IP seguida de "/owncloud" al mateix, per exemple si la nostra IP és 172.31.84.197 posarem al navegador 172.31.84.197/owncloud i podrem accedir al servei.**

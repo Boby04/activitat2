@@ -73,6 +73,72 @@ Instal·lem PHP i els mòduls necessaris:
 
 ![](OWN13.png)
 
+Després de la instal·lació editem el fitxer php.ini i canviarem alguns valors:
+
+![](OWN20.png)
+
+*Els valors que hem de canviar són els següents:*
+
+- file_uploads = On 
+- allow_url_fopen = On 
+- memory_limit = 256M 
+- upload_max_filesize = 100M 
+- display_errors = Off 
+- date.timezone = Europe/Madrid
+
+![](OWN14.png)
+
+![](OWN15.png)
+
+![](OWN16.png)
+
+![](OWN17.png)
+
+![](OWN18.png)
+
+![](OWN19.png)
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+# Instal·lem Owncloud
+
+Descarreguem la darrera versió del programa i descomprimim els fitxers, a més movem els fitxers d'Owncloud a "/var/www/html/owncloud":
+
+![](OWN21.png)
+
+![](OWN22.png)
+
+![](OWN23.png)
+
+![](OWN24.png)
+
+Canviem propietari i permisos dels directoris d'owncloud. www-data perquè els pugui fer servir Apache, 755 perquè els pugui executar i llegir qualsevol usuari de Linux:
+
+![](OWN25.png)
+
+![](OWN26.png)
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+# Configura Apache
+
+Configurarem Apache:
+
+![](OWN27.png)
+
+Hem de deixar un fitxer com el següent, però canviant el ServerName i el ServerAlias pels noms i àlies del nostre propi domini.
+
+![](OWN28.png)
+
+Habilitem owncloud i el mòdul rewrite:
+
+![](OWN29.png)
+
+Reiniciem Apache:
+
+![](OWN30.png)
+
 
 
 

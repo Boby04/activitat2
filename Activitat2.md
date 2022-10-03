@@ -137,7 +137,24 @@ Habilitem owncloud i el mòdul rewrite:
 
 Reiniciem Apache:
 
-![](OWN30.png)
+- sudo service Apache2 restart
+
+
+A partir d'aquest moment podem accedir a owncloud des del navegador per això hem d'introduir la nostra IP seguida de "/owncloud" al mateix, per exemple si la nostra IP és 172.31.84.197 posarem al navegador 172.31.84.197/owncloud i podrem accedir al servei.
+
+Ja al navegador creem un compte d'administració i posem les dades de MariaDB que hem configurat anteriorment.
+
+En el meu cas per verure quina es la meva IP he intrduït **ip a** i he trobat la meva IP.
+
+![](OWN31.png)
+
+Ara ja podem entra a Owncloud, entrem al nostre navegador i posem la nostra IP seguidament amb /owncloud i haurem de posar les dades que hem introduït a MARIADS
+
+![](OWN32.png)
+
+I finalment una vegada posem les dades haurem de obtindre aixó:
+
+![](OWN33.png)
 
 
 

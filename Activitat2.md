@@ -133,11 +133,12 @@ Hem de deixar un fitxer com el següent, però canviant el ServerName i el Serve
 
 
 
-Habilitem owncloud i el mòdul rewrite:
+> Habilitem owncloud i el mòdul rewrite:
 
 ![](OWN29.png)
 
-El significat de cada línia:
+**El significat de cada línia:**
+
 - `ServerAdmin admin@example.com`--> El nom del administrador del servidor
 - `DocumentRoot /var/www/html/owncloud`--> És una de les directives d'Apache que ens permeten configurar-ne el funcionament, i tal com les altres, es pot canviar d'acord amb les nostres necessitats
 - `ServerName owncloud.pri.com`--> El nom del servidor
@@ -153,6 +154,8 @@ El significat de cada línia:
 - `SetEnv HOME /var/www/html/owncloud`--> Per posar la ruta principal de la nostra pàgina web
 - `SetEnv HTTP_HOME /var/www/html/owncloud`-->
 - `</Directory>`--> Tancametn de línia del directori
+
+
 
 
 

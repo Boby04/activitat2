@@ -129,13 +129,7 @@ Configurarem Apache:
 
 Hem de deixar un fitxer com el següent, però canviant el ServerName i el ServerAlias pels noms i àlies del nostre propi domini.
 
-![](OWN28.png)
-
-
-
-> Habilitem owncloud i el mòdul rewrite:
-
-![](OWN29.png)
+![](own29(nou).png)
 
 **El significat de cada línia:**
 
@@ -157,7 +151,9 @@ Hem de deixar un fitxer com el següent, però canviant el ServerName i el Serve
 
 
 
+Habilitem owncloud i el mòdul rewrite:
 
+![](OWN29.png)
 
 
 Reiniciem Apache:
@@ -181,6 +177,15 @@ I finalment una vegada posem les dades haurem de obtindre aixó:
 
 ![](OWN33.png)
 
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+# Explicacions comandes
+
+- Què fa la comanda a2ensite? **A2ensite és un script que habilita un lloc web especificat**
+
+- I la comando a2dissite? **A2dissite és un script que deshabilitar un lloc web especificat**
+
+- Què significa la línia de `/etc/hosts` --> **La línia `/etc/hosts` significa la ruta del arxiu on pots configurar els enllaços que busques al buscador per portarte a unaltre lloc**
 
 
 

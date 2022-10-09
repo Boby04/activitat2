@@ -137,6 +137,26 @@ Habilitem owncloud i el mòdul rewrite:
 
 ![](OWN29.png)
 
+El significat de cada línia:
+- `ServerAdmin admin@example.com`--> El nom del administrador del servidor
+- `DocumentRoot /var/www/html/owncloud`--> És una de les directives d'Apache que ens permeten configurar-ne el funcionament, i tal com les altres, es pot canviar d'acord amb les nostres necessitats
+- `ServerName owncloud.pri.com`--> El nom del servidor
+- `ServerAlias www.owncloudpri.com`--> Directori on es guarden els fitxers servidor en aquest virtual host
+- `Alias /owncloud "/var/www/html/owncloud/"`--> Un sobrenom 
+- `<Directory /var/www/html/owncloud>"`--> El directori on esta situat
+- `Options FollowSymlinks`--> És una directiva dels servidors web Apache, que serveix per seguir els enllaços simbòlics d'un directori
+- `AllowOverride All`--> Controla quines directives es poden situar als fitxers .htaccess.
+- `Require all granted`--> Permisos para que tingue accés a tot
+- `<IfModule mod_dav.c>`--> Per accedir al meu lloc web allotjat
+- `Dav off`--> Modo silenci apagat
+- `</IfModule>`--> Tancament de línia
+- `SetEnv HOME /var/www/html/owncloud`--> Per posar la ruta principal de la nostra pàgina web
+- `SetEnv HTTP_HOME /var/www/html/owncloud`-->
+- `</Directory>`--> Tancametn de línia del directori
+
+
+
+
 Reiniciem Apache:
 
 `sudo service Apache2 restart`
@@ -146,7 +166,7 @@ Reiniciem Apache:
 
 **Ja al navegador creem un compte d'administració i posem les dades de MariaDB que hem configurat anteriorment.**
 
-En el meu cas per verure quina es la meva IP he intrduït **ip a** i he trobat la meva IP.
+En el meu cas per verure quina es la meva IP he intrduït `ip a` i he trobat la meva IP.
 
 ![](OWN31.png)
 

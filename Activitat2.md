@@ -132,7 +132,7 @@ Hem de deixar un fitxer com el següent, però canviant el ServerName i el Serve
 ![](own29(nou).png)
 
 **El significat de cada línia:**
-
+```
 - `ServerAdmin admin@example.com`--> El nom del administrador del servidor
 - `DocumentRoot /var/www/html/owncloud`--> És una de les directives d'Apache que ens permeten configurar-ne el funcionament, i tal com les altres, es pot canviar d'acord amb les nostres necessitats
 - `ServerName owncloud.pri.com`--> El nom del servidor
@@ -148,6 +148,7 @@ Hem de deixar un fitxer com el següent, però canviant el ServerName i el Serve
 - `SetEnv HOME /var/www/html/owncloud`--> Per posar la ruta principal de la nostra pàgina web
 - `SetEnv HTTP_HOME /var/www/html/owncloud`-->
 - `</Directory>`--> Tancametn de línia del directori
+```
 
 
 
